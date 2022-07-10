@@ -1,4 +1,6 @@
 # MyTestIT
+npm Install
+
 ## Instalacion React Native Versión Anterior
 npx react-native init MyTestIT --version 0.68.2
 
@@ -26,9 +28,9 @@ npm install @react-navigation/material-bottom-tabs react-native-paper react-nati
 ## Install de Screen Navegacion Componentes
 npm install react-native-screens react-native-safe-area-context
 
-#Adicionar al App.js
+## Adicionar al App.js
 import 'react-native-gesture-handler'; (se importa en la primera línea del App.js)
-#Adcionar al babel.config.js
+## Adcionar al babel.config.js
 plugins: [
     'react-native-reanimated/plugin',
 ],
