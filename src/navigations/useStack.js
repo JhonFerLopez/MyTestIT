@@ -6,6 +6,7 @@ import MenuImage from '../components/MenuImage/MenuImage'
 
 import HomeScreen from '../screen/Home/HomeScreen';
 import IndicadorScreen from '../screen/Indicadores/IndicadorScreen';
+import InfoScreen from '../screen/Info/InfoScreen';
 
 export function useStack() {
     const { width } = Dimensions.get("screen");
@@ -31,6 +32,7 @@ export function useStack() {
           })}>
           <Stack.Screen name='Home' component={HomeScreen} />
           <Stack.Screen name='Indicador' component={IndicadorScreen} />
+          <Stack.Screen name='Info' component={InfoScreen} />
         </Stack.Navigator>
     );
     return{

@@ -3,20 +3,24 @@ import {
   FlatList,
   View,
   Image,
+  Pressable, 
+  Alert, 
+  Modal, 
   ImageBackground,
   TouchableHighlight,
   TouchableOpacity,
   ScrollView,
   Linking
 } from 'react-native';
-import { Text, HStack } from "@react-native-material/core";
 import styles from './styles';
+import { Text, HStack } from "@react-native-material/core";
 
 export default class HomeScreen extends React.Component {
   
   constructor(props) {
     super(props);
     const { navigation } = this.props;
+    
     this.state = {
       listData: [],
       isLoaded: false,
@@ -45,8 +49,7 @@ export default class HomeScreen extends React.Component {
     this.props.navigation.navigate('Indicador', { item });
   };
   onPressInfo = item => {
-    //this.props.navigation.navigate('Indicador', { item });
-    console.log('info');
+    this.props.navigation.navigate('Info', { item });
   };
   
   renderContent = ({ item, index }) => (
@@ -72,13 +75,13 @@ export default class HomeScreen extends React.Component {
     </TouchableHighlight>
   );
 
-  render() {  
-
+  render() { 
+   
     if(this.state.isLoaded){
       delete this.state.listData['autor'];
       delete this.state.listData['version'];
       delete this.state.listData['fecha'];
-
+      
       return (
           <View style={{ backgroundColor: '#F2F2F2'}}>
             {
