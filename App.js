@@ -15,4 +15,4 @@ export default function App() {
   );
 }
  
-//console.disableYellowBox = true;
+console.disableYellowBox = true;

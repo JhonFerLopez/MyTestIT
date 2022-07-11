@@ -8,14 +8,6 @@ import {
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { useTabs } from './useTab';
 
-function SettingsScreen() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Settings!</Text>
-      </View>
-    );
-}
-
 export function useDrawer() {
 
     const Drawer = createDrawerNavigator();

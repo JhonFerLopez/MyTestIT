@@ -35,9 +35,7 @@ export default class AppContainer extends React.Component {
       }else{
         return (
           <View style={styles.presentacion}>
-            <SettingsScreen />
-            <Image style={styles.fontPhoto} source={{ uri: 'https://app-innopolitica.com.co/wp-content/uploads/2021/10/innopoliticaLogo.png' }} />
-            <Image style={styles.logoPhoto} source={{ uri: 'https://app-innopolitica.com.co/wp-content/uploads/2021/10/innopoliticaLogo.png' }} />
+            <Text style={styles.presentacionTitle} >FINANCES</Text>
           </View>
         )
       }    
