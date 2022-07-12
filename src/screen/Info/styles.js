@@ -6,15 +6,19 @@ const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
     contentItemContainer: {
         height: '100%',
-        backgroundColor: '#FFF',
-        borderColor: 'red',
-        borderWidth: 2,        
+        backgroundColor: '#FFF',      
     },
-    itemViewContent:{
+    itemViewContentInfo:{
         width: '100%', 
-        height: '50%', 
+        height: '30%', 
         padding: 8,
         //justifyContent:'center'   
+    },
+    itemViewContentGrafic:{
+        width: '100%', 
+        height: '70%', 
+        padding: 10,
+        marginTop:20,
     },
     itemTitle:{
         padding: 20,
@@ -46,8 +50,6 @@ const styles = StyleSheet.create({
         width: '50%',
         textAlign:'right',
     },
-
-
     viewPrice:{
         color: '#7B6F72',
         fontSize:14,

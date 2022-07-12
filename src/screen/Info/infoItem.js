@@ -4,8 +4,12 @@ import {
 } from 'react-native';
 import { HStack, Text } from "@react-native-material/core";
 import styles from './styles';
+import moment from "moment";
 
 const InfoItem = (props) => {
+    const date = new Date(props.serie[0].fecha)
+    const fecha = moment(date).utc().format('YYYY-MM-DD')
+
     return (
         <View>
             <View style={styles.itemTitle}>
@@ -17,7 +21,7 @@ const InfoItem = (props) => {
             </HStack>
             <HStack style={styles.itemInfo}>
                 <Text style={styles.textLabel}>Fecha</Text>
-                <Text style={styles.textTitle}>{props.serie[0].fecha}</Text>           
+                <Text style={styles.textTitle}>{fecha}</Text>           
             </HStack>
             <HStack style={styles.itemInfo}>
                 <Text style={styles.textLabel}>Unidad de Medida</Text>

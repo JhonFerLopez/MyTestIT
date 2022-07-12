@@ -28,6 +28,13 @@ npm install @react-navigation/material-bottom-tabs react-native-paper react-nati
 ## Install de Screen Navegacion Componentes
 npm install react-native-screens react-native-safe-area-context
 
+## Instalacion de libreria Moment para formatero de fechas
+npm install moment --save  
+
+## Instalacion de Libreria de Graficas react-native-chart-kit
+npm add react-native-chart-kit
+npm add react-native-svg  
+
 ## Adicionar al App.js
 import 'react-native-gesture-handler'; (se importa en la primera línea del App.js)
 ## Adcionar al babel.config.js

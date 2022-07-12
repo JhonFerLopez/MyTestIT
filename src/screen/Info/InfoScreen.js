@@ -4,8 +4,10 @@ import {
 } from 'react-native';
 import { HStack, Text, VStack } from "@react-native-material/core";
 import styles from './styles';
-import InfoItem from './infoItem'
+
 import { useApi } from '../../hooks/useFetchApi'
+import InfoItem from './infoItem'
+import InfoGrafic from './InfoGrafic';
 
 
 const Info = ({ navigation, route }) => {
@@ -15,11 +17,11 @@ const Info = ({ navigation, route }) => {
   if(status){
     return (
       <VStack style={styles.contentItemContainer}>
-          <VStack style={styles.itemViewContent}>
+          <VStack style={styles.itemViewContentInfo}>
             <InfoItem {...fetchData}/>
           </VStack>
-          <View style={styles.itemViewContent}>
-            <Text style={styles.viewTitle}>{fetchData.serie[0].fecha}</Text>
+          <View style={styles.itemViewContentGrafic}>
+            <InfoGrafic {...fetchData}/>
           </View>
         </VStack>
     )
