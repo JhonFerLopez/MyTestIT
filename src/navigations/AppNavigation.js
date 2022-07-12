@@ -1,14 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {
     Text,
     View,
-    Image,
     Dimensions
 } from 'react-native';
 
 import styles from './styles';
 import { NavigationContainer } from '@react-navigation/native';
-import { useDrawer } from './useDrawer';
+import { Drawer } from './Drawer';
 
 
 export default class AppContainer extends React.Component {
@@ -23,7 +22,7 @@ export default class AppContainer extends React.Component {
     
     render() {
       const { width } = Dimensions.get("screen");
-      const { DrawerStack } = useDrawer();
+      const { DrawerStack } = Drawer();
       
       if(this.state.loading){
         

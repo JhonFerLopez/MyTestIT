@@ -1,6 +1,6 @@
-import React, {setState} from 'react';
-import { View, Image,Dimensions } from 'react-native';
-import { Text, Button } from "@react-native-material/core";
+import React from 'react';
+import { View, Dimensions } from 'react-native';
+import { Text } from "@react-native-material/core";
 import { createStackNavigator  } from '@react-navigation/stack';
 import MenuImage from '../components/MenuImage/MenuImage'
 
@@ -8,7 +8,7 @@ import HomeScreen from '../screen/Home/HomeScreen';
 import IndicadorScreen from '../screen/Indicadores/IndicadorScreen';
 import InfoScreen from '../screen/Info/InfoScreen';
 
-export function useStack() {
+export function Stack() {
     const { width } = Dimensions.get("screen");
     const Stack = createStackNavigator();
     

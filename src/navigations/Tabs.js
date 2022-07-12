@@ -1,13 +1,13 @@
-import React, {setState} from 'react';
+import React from 'react';
 import { Image } from 'react-native';
 import styles from './styles';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { useStack } from './useStack';
+import { Stack } from './Stack';
 
 
-export function useTabs() {
+export function Tabs() {
     const Tab = createMaterialBottomTabNavigator();
-    const { MainNavigator } = useStack();
+    const { MainNavigator } = Stack();
     const navOptionHandler = () => ({
         headerShown: false,
         tabBarLabel: '',
@@ -21,7 +21,7 @@ export function useTabs() {
             initialRouteName="Home"
             activeColor="#000000"
             inactiveColor="#000000"
-            barStyle={{ backgroundColor: '#05C1C1', padding: 5 }}
+            barStyle={{ backgroundColor: '#FFF', padding: 5 }}
         >
             <Tab.Screen name="Inicio" component={MainNavigator} options={navOptionHandler} />   
         </Tab.Navigator>

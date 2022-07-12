@@ -1,17 +1,11 @@
-import React, {setState} from 'react';
-import {
-    Text,
-    View,
-    Image,
-    Dimensions
-} from 'react-native';
+import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { useTabs } from './useTab';
+import { Tabs } from './Tabs';
 
-export function useDrawer() {
+export function Drawer() {
 
     const Drawer = createDrawerNavigator();
-    const { MyTab } = useTabs();
+    const { MyTab } = Tabs();
     const navOptionHandler = () => ({
         headerShown: false
     })
